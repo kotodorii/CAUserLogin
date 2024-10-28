@@ -51,8 +51,6 @@ public class MainWithDB {
         final LoginViewModel loginViewModel = new LoginViewModel();
         final LoggedInViewModel loggedInViewModel = new LoggedInViewModel();
         final SignupViewModel signupViewModel = new SignupViewModel();
-
-        // TODO Task 1.1 in a copy of this file, change this line to use the in-memory DAO.
         final DBUserDataAccessObject userDataAccessObject = new DBUserDataAccessObject(new CommonUserFactory());
 
         final SignupView signupView = SignupUseCaseFactory.create(viewManagerModel, loginViewModel,
